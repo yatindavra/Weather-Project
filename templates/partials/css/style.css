@@ -1,0 +1,137 @@
+h1{
+color: red;
+}
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,400;8..30,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+:root{
+    --main-bg : #1e272e;
+    --main-color : #0097e6;
+
+}
+html{
+    font-size: 62.5%;   
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main_menu{
+    background-color: var(--main-bg);
+}
+
+.navbar{
+padding: 2rem 0;
+color: #fff;
+background-color: var(--main-bg);
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+
+
+.navbar-toggler{
+    background-color: gray;
+}
+
+.navbar li{
+    margin-left: 2rem;
+}
+
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite ;
+    color: var(--main-color);
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.main_header-left{
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header-right{
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+.main_header-left p{
+   font-size: 2rem;
+}
+
+
+.main_header-left h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+    color: rgb(43, 121, 121);
+ }
+ .main_header-left button{
+    font-size: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px rgb(0, 0, 0);
+    outline: none;
+   /* margin: 1rem 0 4rem 0;
+    text-transform: capitalize; */
+ }
+
+.main_header-right img{
+   width: 40rem;
+    height: auto;
+    /* filter: drop-shadow(0 0.5rem 1rem rgba(160, 14, 14, 0.3)); */
+   /* box-shadow: 5rem    #1e272e; */
+}
+
+
+
+footer{
+    width: 100%;
+    color: #fff;
+    background-color: #1e272e;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin-top: auto;
+}
+
+
+@media(max-width:768px){
+   
+   .main_header-left{
+    height: auto;
+    margin: 5rem 0;
+}
+
+.main_header-right{
+    height: auto;
+    margin-top: 3rem;
+}
+}
+

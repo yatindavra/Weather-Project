@@ -1,0 +1,252 @@
+h1{
+color: rgb(51, 31, 31);
+}
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,400;8..30,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+:root{
+    --main-bg : #1e272e;
+    --main-color : #0097e6;
+
+}
+html{
+    font-size: 62.5%;   
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main_menu{
+    background-color: var(--main-bg);
+}
+
+.navbar{
+padding: 2rem 0;
+color: #fff;
+background-color: var(--main-bg);
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+
+
+.navbar-toggler{
+    background-color: gray;
+}
+
+.navbar li{
+    margin-left: 2rem;
+}
+
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite ;
+    color: var(--main-color);
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.main_header-left{
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header-right{
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+.main_header-left p{
+   font-size: 2rem;
+}
+
+
+.main_header-left h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+    color: rgb(43, 121, 121);
+ }
+ .main_header-left button{
+    font-size: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px rgb(0, 0, 0);
+    outline: none;
+   /* margin: 1rem 0 4rem 0;
+    text-transform: capitalize; */
+ }
+
+.main_header-right img{
+   width: 40rem;
+    height: auto;
+    /* filter: drop-shadow(0 0.5rem 1rem rgba(160, 14, 14, 0.3)); */
+   /* box-shadow: 5rem    #1e272e; */
+}
+
+.temp_form{
+    width: 60%;
+    position: relative;
+    margin: 5rem auto;
+}
+
+.temp_form input[type="text"]{
+    
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background-color: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+
+::placeholder{
+    color: #bfc1c8;
+}
+
+.temp_form input[type="submit"]{
+    position: absolute;
+     top: 5px;
+    right: 5px;
+    bottom: 5px; 
+    border: none;
+    background: #009ad8;
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.temp_form input[type="submit"]:hover{
+    color: #009ad8;
+    background-color: #fff;
+}
+
+.tempInfo{
+    width: 40rem;
+    margin: auto  ;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    /* padding: 1rem; */
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 4rem;
+}
+
+.topLay{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    /* padding: 2rem 0; */
+}
+
+
+.topLay p{
+    color: #fff;
+    padding: 2rem ;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+
+.mainLay{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+
+}
+.mainLay #city{
+    padding: 2rem 0;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #bfc1c8;
+}
+
+.mainLay .midLay{
+    display: flex;
+    justify-content: space-around;
+    column-rule: #fff;
+}
+
+.mainLay .midLay p,
+.mainLay .midLay .fas{
+    font-size: 7rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.fas{
+    color: #009ad8;
+}
+
+sup{
+    font-size: 6rem;
+    margin: -2px;
+}
+
+.dataHide{
+ opacity: 0;
+}
+
+
+
+
+
+
+footer{
+    width: 100%;
+    color: #fff;
+    background-color: #1e272e;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin-top: auto;
+}
+
+
+@media(max-width:768px){
+   
+   .main_header-left{
+    height: auto;
+    margin: 5rem 0;
+}
+
+.main_header-right{
+    height: auto;
+    margin-top: 3rem;
+}
+}
+
