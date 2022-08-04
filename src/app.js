@@ -4,9 +4,6 @@ const hbs = require("hbs")
 const port = process.env.PORT || 3000
 const path = require("path")
 
-
-
-
 const staticpath = path.join(__dirname,"../public")
 const tempPath = path.join(__dirname,"../templates/views")
 const partPath = path.join(__dirname,"../templates/partials")
